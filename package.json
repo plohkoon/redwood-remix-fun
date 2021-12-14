@@ -4,6 +4,7 @@
     "packages": [
       "api",
       "web",
+      "main",
       "packages/*"
     ]
   },
@@ -26,7 +27,7 @@
     "dev:rw": "rw dev",
     "dev:rw:web": "rw dev web",
     "dev:rw:api": "rw dev api",
-    "dev:remix": "echo remix",
+    "dev:remix": "cd main && yarn dev",
     "dev:tailwind": "echo tailwind"
   }
 }
