@@ -20,5 +20,13 @@
   },
   "prisma": {
     "seed": "yarn rw exec seed"
+  },
+  "scripts": {
+    "dev:all": "tmux new-session \\; send-keys 'yarn rw dev' C-m \\; split-window -v \\; send-keys 'yarn dev:remix' C-m \\; split-window -h \\; send-keys 'yarn dev:tailwind' C-m \\;",
+    "dev:rw": "rw dev",
+    "dev:rw:web": "rw dev web",
+    "dev:rw:api": "rw dev api",
+    "dev:remix": "echo remix",
+    "dev:tailwind": "echo tailwind"
   }
 }
