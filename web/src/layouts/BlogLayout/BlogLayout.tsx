@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-import { Header, Footer } from "shared/index"
+import { Header, Footer } from "shared"
 
 type BlogLayoutProps = {
   children?: React.ReactNode
