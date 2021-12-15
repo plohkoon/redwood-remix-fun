@@ -24,9 +24,11 @@ export const Failure = ({ error }: CellFailureProps) => (
 export const Success = ({ posts }: CellSuccessProps<BlogPostsQuery>) => {
   return (
     <>
-      {posts.map((post) => (
-        <BlogPost key={post.id} post={post} />
-      ))}
+      <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+        {posts.map((post) => (
+          <BlogPost key={post.id} post={post} />
+        ))}
+      </div>
     </>
   )
 }
