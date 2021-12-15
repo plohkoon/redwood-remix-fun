@@ -29,6 +29,6 @@
     "dev:rw:web": "rw dev web",
     "dev:rw:api": "rw dev api",
     "dev:remix": "cd main && yarn dev",
-    "dev:tailwind": "echo tailwind"
+    "dev:tailwind": "cd main && yarn dev:css"
   }
 }
