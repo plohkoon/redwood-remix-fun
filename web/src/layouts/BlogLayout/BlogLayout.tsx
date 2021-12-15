@@ -1,4 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
+import { Header, Footer } from "shared/index"
 
 type BlogLayoutProps = {
   children?: React.ReactNode
@@ -7,22 +8,9 @@ type BlogLayoutProps = {
 const BlogLayout = ({ children }: BlogLayoutProps) => {
   return (
     <>
-      <header>
-        <h1>
-          <Link to={routes.home()}>Redwood Blog</Link>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to={routes.about()}>About</Link>
-            </li>
-            <li>
-              <Link to={routes.contact()}>Contact</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
