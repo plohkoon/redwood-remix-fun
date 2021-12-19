@@ -8,9 +8,9 @@ import {
   ScrollRestoration,
   useCatch,
 } from 'remix'
-import Footer from './components/Footer'
-import Header from './components/Header'
-// import { Header, Footer } from 'shared'
+// import Footer from './components/Footer'
+// import Header from './components/Header'
+import { Header, Footer } from 'shared'
 import styles from "./tailwind.css"
 
 export function links() {
