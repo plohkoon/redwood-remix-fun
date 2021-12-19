@@ -8,9 +8,9 @@ import {
   ScrollRestoration,
   useCatch,
 } from 'remix'
-// import Footer from './components/Footer'
-// import Header from './components/Header'
-import { Header, Footer } from 'shared'
+import Footer from './components/Footer'
+import Header from './components/Header'
+// import { Header, Footer } from 'shared'
 import styles from "./tailwind.css"
 
 export function links() {
@@ -28,9 +28,7 @@ export default function App() {
   return (
     <Document>
       <Layout>
-        <Header />
         <Outlet />
-        <Footer />
       </Layout>
     </Document>
   )
@@ -120,14 +118,10 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="remix-app">
-      {/* <Header /> */}
-      {/* <Header /> */}
-      <div className="remix-app__main">
-        <div className="container remix-app__main-content">{children}</div>
-      </div>
-      {/* <Footer /> */}
-      {/* <Footer /> */}
+    <div>
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </div>
   )
 }
