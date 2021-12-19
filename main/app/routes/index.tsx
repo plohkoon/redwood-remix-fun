@@ -72,11 +72,14 @@ export default function Index() {
 
   return (
     <>
-      <Form method="post">
-        <input name="title" type="text" placeholder="title" />
-        <input name="body" type="text" placeholder="body" />
-        <button>Save!</button>
-      </Form>
+      <div className="bg-white py-4 px-auto w-lg">
+        <Form method="post" className="mx-auto block container">
+          <h2 className="text-title">Submit a New Post!</h2>
+          <input name="title" type="text" placeholder="title" />
+          <input name="body" type="text" placeholder="body" />
+          <button>Save!</button>
+        </Form>
+      </div>
       { data ?
         <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
           <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
