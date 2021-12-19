@@ -31,5 +31,5 @@ yarn redwood dev
 
 Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
 
-### Redwood
- To get redwood running you need to go into node_modules and modify like [this](https://gist.github.com/cj/c6d7a3b1fcf238073951762747c201ba)
+### Remix
+ To get remix running you need to go into node_modules and modify like [this](https://gist.github.com/cj/c6d7a3b1fcf238073951762747c201ba)
